@@ -6,35 +6,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>simplebayes package &mdash; simplebayes  documentation</title>
-  
 
-  
-  
 
-  
+
+
+
+
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  
-  
-    
 
-  
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
 
-  
 
-  
+
+
+
+
+    <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+
+
+
+
+
     <link rel="top" title="simplebayes  documentation" href="index.html"/>
         <link rel="next" title="simplebayes.categories module" href="simplebayes.categories.html"/>
-        <link rel="prev" title="Welcome to simplebayes’s documentation!" href="index.html"/> 
+        <link rel="prev" title="Welcome to simplebayes’s documentation!" href="index.html"/>
 
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 </head>
@@ -43,13 +43,13 @@
 
   <div class="wy-grid-for-nav">
 
-    
+
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        
+
           <a href="index.html" class="fa fa-home"> simplebayes</a>
-        
-        
+
+
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -60,9 +60,9 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        
-          
-          
+
+
+
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">simplebayes package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
@@ -71,39 +71,39 @@
 </li>
 </ul>
 
-          
-        
+
+
       </div>
       &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
-      
+
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
         <a href="index.html">simplebayes</a>
       </nav>
 
 
-      
+
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
-      
+
     <li>simplebayes package</li>
       <li class="wy-breadcrumbs-aside">
-        
-          <a href="_sources/simplebayes.txt" rel="nofollow"> View page source</a>
-        
+
+          <a href="sources/simplebayes.txt" rel="nofollow"> View page source</a>
+
       </li>
   </ul>
   <hr/>
 </div>
           <div role="main" class="document">
-            
+
   <div class="section" id="simplebayes-package">
 <h1>simplebayes package<a class="headerlink" href="#simplebayes-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="submodules">
@@ -136,7 +136,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</p>
 <dl class="class">
 <dt id="simplebayes.SimpleBayes">
-<em class="property">class </em><code class="descclassname">simplebayes.</code><code class="descname">SimpleBayes</code><span class="sig-paren">(</span><em>tokenizer=None</em>, <em>cache_path='/tmp/'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">simplebayes.</code><code class="descname">SimpleBayes</code><span class="sig-paren">(</span><em>tokenizer=None</em>, <em>cache_path='/tmp/'</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
 <p>A memory-based, optional-persistence naïve bayesian text classifier.</p>
 <dl class="attribute">
@@ -146,14 +146,14 @@ SOFTWARE.</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.cache_persist">
-<code class="descname">cache_persist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.cache_persist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.cache_persist" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_persist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.cache_persist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.cache_persist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Saves the current trained data to the cache.
 This is initiated by the program using this module</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.cache_train">
-<code class="descname">cache_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.cache_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.cache_train" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.cache_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.cache_train" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loads the data for this classifier from a cache file</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -169,7 +169,7 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.calculate_bayesian_probability">
-<code class="descname">calculate_bayesian_probability</code><span class="sig-paren">(</span><em>cat</em>, <em>token_score</em>, <em>token_tally</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.calculate_bayesian_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.calculate_bayesian_probability" title="Permalink to this definition">¶</a></dt>
+<code class="descname">calculate_bayesian_probability</code><span class="sig-paren">(</span><em>cat</em>, <em>token_score</em>, <em>token_tally</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.calculate_bayesian_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.calculate_bayesian_probability" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculates the bayesian probability for a given token/category</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -194,13 +194,13 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.calculate_category_probability">
-<code class="descname">calculate_category_probability</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.calculate_category_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.calculate_category_probability" title="Permalink to this definition">¶</a></dt>
+<code class="descname">calculate_category_probability</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.calculate_category_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.calculate_category_probability" title="Permalink to this definition">¶</a></dt>
 <dd><p>Caches the individual probabilities for each category</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.classify">
-<code class="descname">classify</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.classify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.classify" title="Permalink to this definition">¶</a></dt>
+<code class="descname">classify</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.classify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.classify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Chooses the highest scoring category for a sample of text</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -218,7 +218,7 @@ This is initiated by the program using this module</p>
 
 <dl class="classmethod">
 <dt id="simplebayes.SimpleBayes.count_token_occurrences">
-<em class="property">classmethod </em><code class="descname">count_token_occurrences</code><span class="sig-paren">(</span><em>words</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.count_token_occurrences"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.count_token_occurrences" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="descname">count_token_occurrences</code><span class="sig-paren">(</span><em>words</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.count_token_occurrences"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.count_token_occurrences" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a key/value set of word/count for a given sample of text</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -236,13 +236,13 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.flush">
-<code class="descname">flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.flush"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.flush" title="Permalink to this definition">¶</a></dt>
+<code class="descname">flush</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.flush"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.flush" title="Permalink to this definition">¶</a></dt>
 <dd><p>Deletes all tokens &amp; categories</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.get_cache_location">
-<code class="descname">get_cache_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.get_cache_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.get_cache_location" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_cache_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.get_cache_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.get_cache_location" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gets the location of the cache file</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -258,7 +258,7 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scores a sample of text</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -276,7 +276,7 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.tally">
-<code class="descname">tally</code><span class="sig-paren">(</span><em>category</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.tally"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.tally" title="Permalink to this definition">¶</a></dt>
+<code class="descname">tally</code><span class="sig-paren">(</span><em>category</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.tally"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.tally" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gets the tally for a requested category</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -294,7 +294,7 @@ This is initiated by the program using this module</p>
 
 <dl class="classmethod">
 <dt id="simplebayes.SimpleBayes.tokenize_text">
-<em class="property">classmethod </em><code class="descname">tokenize_text</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.tokenize_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.tokenize_text" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="descname">tokenize_text</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.tokenize_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.tokenize_text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Default tokenize method; can be overridden</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -312,7 +312,7 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.train">
-<code class="descname">train</code><span class="sig-paren">(</span><em>category</em>, <em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.train" title="Permalink to this definition">¶</a></dt>
+<code class="descname">train</code><span class="sig-paren">(</span><em>category</em>, <em>text</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.train" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trains a category with a sample of text</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -330,7 +330,7 @@ This is initiated by the program using this module</p>
 
 <dl class="method">
 <dt id="simplebayes.SimpleBayes.untrain">
-<code class="descname">untrain</code><span class="sig-paren">(</span><em>category</em>, <em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simplebayes.html#SimpleBayes.untrain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.untrain" title="Permalink to this definition">¶</a></dt>
+<code class="descname">untrain</code><span class="sig-paren">(</span><em>category</em>, <em>text</em><span class="sig-paren">)</span><a class="reference internal" href="modules/simplebayes.html#SimpleBayes.untrain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simplebayes.SimpleBayes.untrain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Untrains a category with a sample of text</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -354,16 +354,16 @@ This is initiated by the program using this module</p>
 
           </div>
           <footer>
-  
+
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+
         <a href="simplebayes.categories.html" class="btn btn-neutral float-right" title="simplebayes.categories module">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+
+
         <a href="index.html" class="btn btn-neutral" title="Welcome to simplebayes’s documentation!"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+
     </div>
-  
+
 
   <hr/>
 
@@ -374,7 +374,7 @@ This is initiated by the program using this module</p>
   </div>
 
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-  
+
 </footer>
         </div>
       </div>
@@ -382,10 +382,10 @@ This is initiated by the program using this module</p>
     </section>
 
   </div>
-  
 
 
-  
+
+
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -396,25 +396,25 @@ This is initiated by the program using this module</p>
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="static/jquery.js"></script>
+      <script type="text/javascript" src="static/underscore.js"></script>
+      <script type="text/javascript" src="static/doctools.js"></script>
 
-  
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
 
-  
-  
+
+
+    <script type="text/javascript" src="static/js/theme.js"></script>
+
+
+
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-   
+
 
 </body>
 </html>
