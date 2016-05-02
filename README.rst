@@ -45,6 +45,8 @@ Basic Usage
 
 Cache Usage
 -----------
+
+Cache to a file:
 .. code-block:: python
 
     import simplebayes
@@ -58,7 +60,26 @@ Cache Usage
         bayes.train('bad', 'fear death horror government zombie')
 
         # Saving the cache so next time the training won't be needed
-        bayes.persist_cache()
+        bayes.cache_persist()
+
+Cache to memory:
+.. code-block:: python
+
+    import simplebayes
+    bayes_origin = simplebayes.SimpleBayes()
+    # [...] train and call bayes_origin.cache_persist()
+    
+    bayes = simplebayes.SimpleBayes(cache_data=bayes_origin.cache_data)
+    # Cache is now in memory
+
+    if not bayes.cache_train():
+        print("Unable to load cache")
+    
+    # Should be equivalent to the previous output
+    print bayes.score('i fear zombies and love the government')
+    
+       
+
 
 Tokenizer Override
 ------------------
