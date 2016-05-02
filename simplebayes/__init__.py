@@ -25,6 +25,7 @@ SOFTWARE.
 from simplebayes.categories import BayesCategories
 import pickle
 import os
+import pickle
 
 
 class SimpleBayes(object):
@@ -32,16 +33,25 @@ class SimpleBayes(object):
 
     cache_file = '_simplebayes.pickle'
 
-    def __init__(self, tokenizer=None, cache_path='/tmp/'):
+    def __init__(self, tokenizer=None, 
+                 cache_path='/tmp/', 
+                 cache_data=None,
+                 cache_in_memory=False):
         """
         :param tokenizer: A tokenizer override
         :type tokenizer: function (optional)
         :param cache_path: path to data storage
         :type cache_path: str
+        :param cache_data: from an existing cache
+        :type cache_data: pickle.dumps object
+        :param cache_in_memory: True if the persistant cache is kept in memory
+        :type: boolean
         """
         self.categories = BayesCategories()
         self.tokenizer = tokenizer or SimpleBayes.tokenize_text
         self.cache_path = cache_path
+        self.cache_data = cache_data
+        self.cache_in_memory = True if cache_data is not None else cache_in_memory
         self.probabilities = {}
 
     @classmethod
@@ -266,22 +276,28 @@ class SimpleBayes(object):
         """
         Gets the location of the cache file
 
-        :return: the location of the cache file
-        :rtype: string
+        :return: the location of the cache file, or False if cache in memory
+        :rtype: string or False
         """
-        filename = self.cache_path if \
-            self.cache_path[-1:] == '/' else \
-            self.cache_path + '/'
-        filename += self.cache_file
-        return filename
+        if self.cache_in_memory:
+            return False
+        else:
+            filename = self.cache_path if \
+                self.cache_path[-1:] == '/' else \
+                self.cache_path + '/'
+            filename += self.cache_file
+            return filename
 
     def cache_persist(self):
         """
         Saves the current trained data to the cache.
         This is initiated by the program using this module
         """
-        filename = self.get_cache_location()
-        pickle.dump(self.categories, open(filename, 'wb'))
+        if self.cache_in_memory:
+            self.cache_data = pickle.dumps(self.categories)
+        else:
+            filename = self.get_cache_location()
+            pickle.dump(self.categories, open(filename, 'wb'))
 
     def cache_train(self):
         """
@@ -290,12 +306,15 @@ class SimpleBayes(object):
         :return: whether or not we were successful
         :rtype: bool
         """
-        filename = self.get_cache_location()
-
-        if not os.path.exists(filename):
-            return False
-
-        categories = pickle.load(open(filename, 'rb'))
+        
+        if self.cache_in_memory:
+            categories = pickle.loads(self.cache_data)
+        
+        else:
+            filename = self.get_cache_location()
+            if not os.path.exists(filename):
+                return False
+            categories = pickle.load(open(filename, 'rb'))
 
         assert isinstance(categories, BayesCategories), \
             "Cache data is either corrupt or invalid"
