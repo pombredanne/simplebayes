@@ -47,6 +47,7 @@ Cache Usage
 -----------
 
 Cache to a file:
+
 .. code-block:: python
 
     import simplebayes
@@ -63,6 +64,7 @@ Cache to a file:
         bayes.cache_persist()
 
 Cache to memory:
+
 .. code-block:: python
 
     import simplebayes
